@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FruitTracker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="img/logo.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style2.css" rel="stylesheet"
+<!--===============================================================================================-->
+</head>
+<body>
+	<header id="header" class="header header-hide">
+    <div class="container">
+      <div id="logo" class="pull-left">
+      	
+        <h1><a href="index.html"><img src="img/logo.png" width="130" height="100" margin-top ="30px" alt="" title="" /></a>
+	</h1>
+      </div>
+
+
+  </header><!-- #header -->
+
+
+
+	<div class="container-contact100">
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Pendaftaran
+				</span>
+				 
+				<div class="wrap-input100 validate-input" data-validate="Selection">
+					 <select class="form-control input100" id="Select1">
+      					<option value="Petani">Petani</option>
+      					<option value="Distributor">Distributor</option>
+     				    <option value="Retailer">Retailer</option>
+      
+    				</select>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Public Key">
+					<input id="key" class="input100" type="text" name="name" placeholder="Public Key">
+					<span class="focus-input100-1"></span>
+					<span class="focus-input100-2"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<input id="nama" class="input100" type="text" name="name" placeholder="Nama Lengkap">
+					<span class="focus-input100-1"></span>
+					<span class="focus-input100-2"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<input id="kota" class="input100" type="text" name="name" placeholder="Kota">
+					<span class="focus-input100-1"></span>
+					<span class="focus-input100-2"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<input id="negara" class="input100" type="text" name="name" placeholder="Negara">
+					<span class="focus-input100-1"></span>
+					<span class="focus-input100-2"></span>
+				</div>
+				<div class="container-contact100-form-btn">
+					<p id="button-daf" class="contact100-form-btn"> 
+						Daftar
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+  <div id="regis" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header"><!-- 
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add Fruit</h4>
+        </div> -->
+     <div class="modal-body">
+        <div class="tab-content">
+         Pendaftaran Berhasil   
+        </div>
+        
+         
+        </div>
+    </div>
+</div>
+
+	<!-- <script src="js/web3.min.js"></script> -->
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+	<script src="js/web3.min.js"></script>
+  <script src="js/abi.js"></script>
+    <script>
+      // membuat variable global untuk menampung account address
+     let accountAddress = null;
+
+      window.addEventListener('load', () => {
+        web3 = new Web3(window.web3.currentProvider);
+
+        web3.eth.getAccounts().then(accounts => {
+
+          
+          // memunculkan form donasi setelah account address didapatkan
+          accountAddress = accounts[0];
+        //   document.querySelector('#donate-form').style.display = 'flex';
+        });
+        
+        const fruitContract = new web3.eth.Contract(abiInterface, contractAddress);
+
+        const pub = document.querySelector('#key');
+        const nama = document.querySelector('#nama');
+        const kota = document.querySelector('#kota');
+        const negara = document.querySelector('#negara');
+        const id = document.querySelector('#Select1');
+
+        var regisEvent = fruitContract.events.Register();
+        const regBtn = document.querySelector('#button-daf');
+        // menambahkan listener click pada button donate
+        regBtn.addEventListener('click', () => {
+          // mengambil value jumlah ether yang akan didonasikan dalam string        
+          if(id.value=="Petani"){
+
+          	fruitContract.methods.newfarmer(pub.value,nama.value, kota.value, negara.value).send( {from: accountAddress});
+          }
+          else if(id.value=="Distributor"){
+          	fruitContract.methods.newdistri(pub.value,nama.value, kota.value, negara.value).send( {from: accountAddress});
+          }
+          else{
+          	fruitContract.methods.newmarket(pub.value,nama.value, kota.value, negara.value).send( {from: accountAddress});
+          }
+        });
+
+        fruitContract.events.Register(function(error, result){
+            if (!error)
+                {
+                    $("#regis").attr("tab-content", ("Pendaftaran Berhasil"));
+                    
+                } else {                    
+                    console.log(error);
+                }
+                $('#regis').modal('show');
+        });
+
+      });
+	  
+    </script>
+</body>
+</html>

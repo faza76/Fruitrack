@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fruitracker</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/style.css" rel="stylesheet" id="bootstrap-css">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style2.css" rel="stylesheet">
+         <style>
+    #kotak {
+      width: 100%;
+      /*padding: 100px 0;*/
+      text-align: center;
+      background-color: white;
+      /*margin-top: 0px;*/
+    }
+  </style>
+</head>
+
+
+<!------ Include the above in your HEAD tag ---------->
+<header id="header" class="header header-hide">
+    <div class="col-md-12" style="background-color: #ffff">
+      <div id="logo" class="pull-left">
+        
+        <h1><a href="index.html"><img src="icon/logo3.png" width="120px" height="60px" alt="" title="" /></a>
+  </h1>
+    </div>
+</div>
+  
+  </header>
+
+<body>
+<div class="container">
+        <div class="row " align="center" >
+             
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12" >
+                    <div class="box-icon text-center" >
+
+                        <div class="title">
+                            <p id="button-daf" class="contact100-form-btn" style="background-color: #ffff" data-toggle="modal" data-target="#myModal"></p><img src="icon/delivery.png" class="img-responsive" width="40%" align="center">
+                            <h1 style="color: #878787" >Distributor</h1>
+                            </button>
+                        </div>
+                        
+                        
+                        
+                     </div>
+                </div> 
+                    
+                
+                <a href="#" data-toggle="modal" data-target="#addFruit">
+                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-icon text-center" >                        
+                        <div class="title">
+                            <p id="button-daf" class="contact100-form-btn" style="background-color: #ffff" ></p>
+                            <img src="icon/receive.png" class="img-responsive" margin="auto" width="40%">
+                            <h1 style="color: #878787" >Terima Buah</h1>
+                        <!-- </button> -->
+                        </div>    
+                     </div>
+                </div>
+            </a>   
+                 
+                 <a href="#" data-toggle="modal" data-target="#sendFruit">
+                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-icon text-center">                        
+                        <div class="title">
+                            <p id="button-daf" class="contact100-form-btn" style="background-color: #ffff" ></p>
+                            <img src="icon/box.png" class="img-responsive" margin="20px" width="40%">
+                            <h1 style="color: #878787" >Send</h1>
+                        </button>
+                        </div>    
+                     </div>
+                </div>
+            </a>
+                
+        </div>      
+    </div>
+<br>
+<div class="container">
+    <div class="panel with-nav-tabs panel-primary">
+        <div class="panel-heading">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1primary" data-toggle="tab">FRUIT DATA</a></li>
+                    <li ><a href="#tab2primary" data-toggle="tab">DATA</a></li>
+                </ul>
+        </div>
+        <div class="panel-body">
+            <div class="tab-content">
+                <div id="tab1primary" class="tab-pane fade in active" >
+
+                <table border="1" class="stab">
+                <tr font-size="20px">
+                  <td>
+                   NO
+                  </td>
+                  <td >
+                    TRACK ID
+                  </td>
+                  <td>
+                    FRUIT CODE
+                  </td>
+                  <td>
+                    GOOD FRUIT
+                  </td>
+                  <td>
+                    ROTTEN FRUIT
+                  </td>
+                  <td>
+                    RECEIVER
+                  </td>
+                  <td>
+                    STATUS
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    1.
+                  </td>
+                  <td id="t1">
+                    
+                  </td>
+                  <td id="f1">
+                    
+                  </td>
+                  <td id="q1">
+                    
+                  </td>
+                  <td id="bq1">
+                    
+                  </td>
+                  <td id="r1">
+                    
+                  </td>
+                  <td id="s1">
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    2.
+                  </td>
+                  <td id="t2">
+                    
+                  </td>
+                  <td id="f2">
+                    
+                  </td>
+                  <td id="q2">
+                    
+                  </td>
+                  <td id="bq2">
+                    
+                  </td>
+                  <td id="r2">
+                    
+                  </td>
+                  <td id="s2">
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    3.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    4.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    5.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+              </table>
+                </div>
+                <div id="tab2primary" class="tab-pane fade" >
+                <table border="1" class="stab">
+                <tr font-size="20px">
+                  <td>
+                   NO
+                  </td>
+                  <td >
+                    TRACK ID
+                  </td>
+                  <td>
+                    FRUIT CODE
+                  </td>
+                  <td>
+                    GOOD FRUIT
+                  </td>
+                  <td>
+                    ROTTEN FRUIT
+                  </td>
+                  <td>
+                    SENDER
+                  </td>
+                  <td>
+                    STATUS
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    1.
+                  </td>
+                  <td id="ts1">
+                    
+                  </td>
+                  <td id="fs1">
+                    
+                  </td>
+                  <td id="qs1">
+                    
+                  </td>
+                  <td id="bqs1">
+                    
+                  </td>
+                  <td id="send1">
+                    
+                  </td>
+                  <td id="ss1">
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    2.
+                  </td>
+                  <td id="ts2">
+                    
+                  </td>
+                  <td id="fs2">
+                    
+                  </td>
+                  <td id="qs2">
+                    
+                  </td>
+                  <td id="bqs2">
+                    
+                  </td>
+                  <td id="send2">
+                    
+                  </td>
+                  <td id="ss2">
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    3.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    4.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    5.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+              </table>
+                </div>
+            </div>
+             <a href="#" data-toggle="modal" data-target="#upFruit">
+            <h5>Update</h5></a>
+            
+        </div>
+        
+    </div>
+</div>
+<br/>
+
+                      
+ <!-- Modal -->
+<div id="addFruit" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Receive</h4>
+        </div>
+     <div class="modal-body">
+        <div class="tab-content">
+             <div class="tab-pane fade active in" id="dbuah">
+            <form id="dbuah">
+             <div class="form-group" data-validate="Name is required"><input type="text" id="trac" class="form-control" placeholder="Masukan Track ID"></div>
+              <div class="row mrgn-30-top">
+                <div class="cd-signin-modal__block js-signin-modal-block"  data-type="signup"> <!-- sign up form -->
+        <div id="kotak">
+          <div class="panel-heading">
+            <select class="form-control" id="camera-select"></select>
+             <div class="well" style="position: relative;display: inline-block;">
+             <canvas width="320" height="240" id="webcodecam-canvas"></canvas>
+             <div class="scanner-laser laser-rightBottom" style="opacity: 0.5;"></div>
+             <div class="scanner-laser laser-rightTop" style="opacity: 0.5;"></div>
+             <div class="scanner-laser laser-leftBottom" style="opacity: 0.5;"></div>
+             <div class="scanner-laser laser-leftTop" style="opacity: 0.5;"></div>
+             </div>
+                    <!-- <div class="navbar-form navbar-right"> -->
+                        
+                <!-- </div> -->
+               
+               
+                <!-- <div class="thumbnail" id="result"> -->
+                  <div class="well" style="overflow: hidden;">
+                  <img width="320" height="240" id="scanned-img" src="">
+                </div>
+                  <div class="caption">
+                    <p id="scanned-QR"></p>
+                  </div>
+                <!-- </div> -->
+                <form class="cd-signin-modal__form" action="#" method="get">
+                <input class="btn btn-success" type="submit" value="Track">
+                  <button title="Play" class="btn btn-success btn-sm" id="play" type="button" data-toggle="tooltip">Scan QR</button><br></br>
+                  <button title="Decode Image" class="btn btn-default btn-sm" id="decode-img" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-upload"></span></button>
+              </form>
+                         </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p id="receive" class="btn btn-block btn-larger">Terima</p>
+                </div>
+              </div>
+            </form>
+        </div>
+         </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="sendFruit" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Form Kirim</h4>
+      </div>
+      <div class="modal-body">
+        <div class="tab-pane fade in" id="bkirim">
+            <form id="bkirim">
+              <div class="form-group" data-validate="Track ID"><input type="text" class="form-control" id="trackM" placeholder="Track ID"></div>
+              <div class="form-group"data-validate="Penerima"><input type="text" class="form-control" id="retail" placeholder="Penerima"></div>
+              <div class="form-group" data-validate="kuantiti"><input type="number" name="points" class="form-control" id="qty" placeholder="Quantity"></div>
+              <div class="row mrgn-30-top">
+                <div class="col-md-6">
+                  
+                <p id="sendM" class="btn btn-larger btn-block">
+                Kirim
+                </p>
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="upFruit" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Update</h4>
+      </div>
+      <div class="modal-body">
+        <div class="tab-pane fade in" id="bkirim">
+            <form id="bkirim">
+              <div class="form-group" data-validate="Penerima"><input type="number" class="form-control" id="upTrack" placeholder="Track Id"></div>
+              <div class="form-group" data-validate="kuantiti"><input type="number" name="points" class="form-control" id="upqty" placeholder="Rotten Fruit"></div>
+              <div class="row mrgn-30-top">
+                <div class="col-md-6">
+                  
+                <p id="updateFruit" class="btn btn-larger btn-block">
+                Submit
+                </p>
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/web3.min.js"></script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/modal-video/js/modal-video.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+  <!-- QR -->
+  <script type="text/javascript" src="js/filereader.js"></script>
+        <script type="text/javascript" src="js/qrcodelib.js"></script>
+        <script type="text/javascript" src="js/webcodecamjs.js"></script>
+        <script type="text/javascript" src="js/main3.js"></script> 
+  <!-- Toogle Js -->
+  <script src="js/web3.min.js"></script>
+  <script src="js/abi.js"></script>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("kotak");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+    <script> 
+      // membuat variable global untuk menampung account address
+     let accountAddress = null;
+
+      window.addEventListener('load', () => {
+        web3 = new Web3(window.web3.currentProvider);
+
+        web3.eth.getAccounts().then(accounts => {
+
+          accountAddress = accounts[0];
+        });
+        
+        const fruitContract = new web3.eth.Contract(abiInterface, contractAddress);
+        
+        const track= document.querySelector('#trac');
+
+        web3.eth.getAccounts().then(accounts => {
+          fruitContract.methods.getTDis(accounts[0]).call().then(res => {
+            document.querySelector('#t1').innerHTML = res[0];          
+            document.querySelector('#ts1').innerHTML = res[0];
+            fruitContract.methods.getShip(res[0]).call().then(ship => {
+                document.querySelector('#f1').innerHTML = ship[0];
+                document.querySelector('#q1').innerHTML = ship[4][0] + " kg";
+                document.querySelector('#bq1').innerHTML = ship[5][0] + " kg";
+                document.querySelector('#r1').innerHTML = ship[3];
+
+                document.querySelector('#fs1').innerHTML = ship[0];
+                document.querySelector('#qs1').innerHTML = ship[4][0] + " kg";
+                document.querySelector('#bqs1').innerHTML = ship[5][0] + " kg";
+                document.querySelector('#send1').innerHTML = ship[1];
+
+                if(ship[6] == 1){
+                  document.querySelector('#s1').innerHTML = "On Progress";
+                  document.querySelector('#ss1').innerHTML = "On Progress";
+                }
+                else if(ship[6] == 2){
+                 document.querySelector('#s1').innerHTML = "On Distributor"; 
+                 document.querySelector('#ss1').innerHTML = "On Distributor";
+                }
+                else {
+                 document.querySelector('#s1').innerHTML = "Received"; 
+                 document.querySelector('#ss1').innerHTML = "Received";
+                } 
+            });
+            document.querySelector('#t2').innerHTML = res[1];          
+            document.querySelector('#ts2').innerHTML = res[1];          
+            fruitContract.methods.getShip(res[1]).call().then(ship => {
+                document.querySelector('#f2').innerHTML = ship[0];
+                document.querySelector('#q2').innerHTML = ship[4][0] + " kg";
+                document.querySelector('#bq2').innerHTML = ship[5][0] + " kg";
+                document.querySelector('#r2').innerHTML = ship[3];
+
+                document.querySelector('#fs2').innerHTML = ship[0];
+                document.querySelector('#qs2').innerHTML = ship[4][0] + " kg";
+                document.querySelector('#bqs2').innerHTML = ship[5][0] + " kg";
+                document.querySelector('#send2').innerHTML = ship[1];
+
+                if(ship[6] == 1){
+                  document.querySelector('#s2').innerHTML = "On Progress";
+                  document.querySelector('#ss2').innerHTML = "On Progress";
+                }
+                else if(ship[6] == 2){
+                 document.querySelector('#s2').innerHTML = "On Distributor"; 
+                 document.querySelector('#ss2').innerHTML = "On Distributor"; 
+                }
+                else {
+                 document.querySelector('#s2').innerHTML = "Received"; 
+                 document.querySelector('#ss2').innerHTML = "Received"; 
+                }
+            });
+          });
+
+
+        });
+        const fruitBtn = document.querySelector('#receive');
+        // menambahkan listener click pada button donate
+        fruitBtn.addEventListener('click', () => {
+            fruitContract.methods.recieve_dis(track.value).send( {from: accountAddress});    
+        });
+        const trackM = document.querySelector('#trackM');
+        const next = document.querySelector('#retail');
+        const qt = document.querySelector('#qty');
+
+        document.querySelector('#sendM').addEventListener('click', () => {
+            fruitContract.methods.sendFruitDistributor(trackM.value, next.value, qt.value).send( {from: accountAddress});    
+        });
+        //update
+        document.querySelector('#updateFruit').addEventListener('click', () => {
+            fruitContract.methods.updateQuality(document.querySelector('#upTrack').value, 0, document.querySelector('#upqty').value).send( {from: accountAddress});    
+        });
+
+      });
+    </script>
+</body>
+</html>

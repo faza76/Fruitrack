@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fruittracker</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/style.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/rating.css" rel="stylesheet" id="bootstrap-css">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/datatrack.css">
+
+</head>
+<!------ Include the above in your HEAD tag ---------->
+<header id="header" class="header header-hide">
+    <div class="col-md-12" style="background-color: #ffff">
+      <div id="logo" class="pull-left">        
+        <h1><a href="index.html"><img src="icon/logo3.png" width="120px" height="60px" alt="" title="" /></a>
+  </h1>
+    </div>
+</div>
+  
+  </header>
+
+<body>
+<div class="container">
+
+    <center>
+        <div class="row">
+          <center><h2 margin-top="50px" id="kode-track">KODE</h2>
+          </center>
+          <button data-toggle="modal" data-target="#ratting" class="btnrating">Rating</button>
+             <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                    <div class="box-part text-center " width="150px">
+
+                        <div class="title">                           
+                           <img src="icon/harvest.png" width="100px" height="100px"></img>
+                          <table cellpadding="70px" cellspacing="80px" >
+                              <tr>
+                                <td><h4> </h4></td>
+                                <td><h4> </h4></td>
+                                <br><br>
+
+                               </tr>
+                              <tr>
+                                <td><h4>Buah</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="namab"><h4>...</h4></td>
+                              
+                              </tr>
+                              <tr>
+                                <td><h4>Tanggal Panen</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="hdate"><h4>...</h4></td>
+                              </tr>
+                               <tr>
+                                <td><h4>Deskripsi</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="desc"><h4>...</h4></td>
+                               </tr>
+                               
+                               <br>
+
+                         </table>
+                        </div>
+                        
+                      
+                     </div>
+                </div> 
+
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+               
+                    <div class="box-part text-center">
+
+                        <div class="title">
+                           
+                           <img src="icon/Farmer.png" width="100px" height="100px"></img>
+                          
+                          <table cellpadding="70px" cellspacing="80px" >
+                              <tr>
+                                <td><h4> </h4></td>
+                                <td><h4> </h4></td>
+                                <br><br>
+
+                               </tr>
+                              <tr>
+                                <td><h4>Nama</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="nfarm"><h4>...</h4></td>
+                              </tr>
+                              <tr>
+                                <td><h4>Kota</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="cfarm"><h4>...</h4></td>
+                              </tr>
+                               <tr>
+                                <td><h4>Negara</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="cofarm"><h4>...</h4></td>
+                               </tr>
+                                <tr>
+                                  <td><h4>Tanggal Kirim</h4></td>
+                                  <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="sendF"><h4>...</h4></td>
+                                </tr>
+                                <br>
+                                
+                         </table>
+                        </div>
+                        
+                      
+                     </div>
+                </div> 
+                      
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+               
+                    <div class="box-part text-center">
+
+                        <div class="title">
+                           
+                           <img src="icon/delivery.png" width="100px" height="100px"></img>
+                          <table cellpadding="70px" cellspacing="80px">
+                              <tr>
+                                <td><h4> </h4></td>
+                                <td><h4> </h4></td>
+                                <br><br>
+
+                               </tr>
+                              <tr>
+                                <td><h4>Nama</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="n_distri"><h4>...</h4>
+                              </tr>
+                              <tr>
+                                <td><h4>Kota</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="cdistri"><h4>...</h4>
+                              </tr>
+                               <tr>
+                                <td><h4>Negara</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="codistri"><h4>...</h4>
+                               </tr>
+                                <tr>
+                                  <td><h4>Tanggal Kirim</h4></td>
+                                  <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="sendD"><h4>...</h4>
+                                </tr>
+                                   <td><h4>Tanggal Terima</h4></td>
+                                  <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="receiveD"><h4>...</h4>
+                                </tr>
+                                <br>
+                         </table>
+                        </div>
+                        
+                      
+                     </div>
+                </div> 
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+               
+                    <div class="box-part text-center">
+
+                        <div class="title">
+                           
+                           <img src="icon/Market.png" width="100px" height="100px"></img>
+                          <table cellpadding="70px" cellspacing="80px">
+                            <tr>
+                                <td><h4> </h4></td>
+                                <td><h4> </h4></td>
+                                <br><br>
+                               </tr>
+                              <tr>
+                                <td><h4>Nama</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="nretail"><h4>...</h4>
+                              </tr>
+                              <tr>
+                                <td><h4>Kota</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="cretail"><h4>...</h4>
+                              </tr>
+                               <tr>
+                                <td><h4>Negara</h4></td>
+                                <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="coretail"><h4>...</h4>
+                               </tr>
+                                <tr>
+                                  <td><h4>Tanggal Terima</h4></td>
+                                  <td><h4>&nbsp : &nbsp</h4></td>
+                                <td id="receiveM"><h4>...</h4>
+                                </tr>
+                                <br>
+                         </table>
+                        </div>
+                        
+                      
+                     </div>
+                </div>  
+
+                </center>
+<!------ MODAL FOR RATING ---------->
+<!-- Modal -->
+<div id="ratting" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">RATING</h4>
+        </div>
+     <div class="modal-body">
+        <div class="tab-content">
+             <div class="tab-pane fade active in" id="rating">
+               <div id="nilai" >RATE: </div>
+              <center>
+              <!-- alternate codepen version https://codepen.io/mad-d/pen/aJMPWr?editors=0010 -->
+             
+              <div class="stars" data-rating="1">
+              <span class="star">&nbsp;</span>
+              <span class="star">&nbsp;</span>
+               <span class="star">&nbsp;</span>
+               <span class="star">&nbsp;</span>
+             <span class="star">&nbsp;</span>
+           </div>
+            </center>
+          
+        </div>
+
+        <div>
+          <button id = "btnsubmit" data-toggle="modal" data-target="#submit" class="btnrating">Submit</button>
+          
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+       </div>
+</div>
+<script src="js/web3.min.js"></script>
+<script src="js/abi.js"></script>
+    <script>
+      
+        // membuat variable global untuk menampung account address
+        // let accountAddress = null;
+        //initial setup
+        document.addEventListener('DOMContentLoaded', function(){
+            let stars = document.querySelectorAll('.star');
+            stars.forEach(function(star){
+                star.addEventListener('click', setRating); 
+            });
+            
+            let rating = parseInt(document.querySelector('.stars').getAttribute('data-rating'));
+            let target = stars[rating - 1];
+            target.dispatchEvent(new MouseEvent('click'));
+        });
+        let num_val = 0;
+        function setRating(ev){
+            let span = ev.currentTarget;
+            let stars = document.querySelectorAll('.star');
+            let match = false;
+            let num = 0;
+            stars.forEach(function(star, index){
+                if(match){
+                    star.classList.remove('rated');
+                }else{
+                    star.classList.add('rated');
+                }
+                //are we currently looking at the span that was clicked
+                if(star === span){
+                    match = true;
+                    num = index + 1;
+                }
+            });
+            document.querySelector('.stars').setAttribute('data-rating', num);
+            num_val = num;
+        }
+
+   
+      // membuat variable global untuk menampung account address
+     let accountAddress = null;
+
+      window.addEventListener('load', () => {
+        web3 = new Web3(window.web3.currentProvider);
+  
+        web3.eth.getAccounts().then(accounts => {
+
+          
+          // memunculkan form donasi setelah account address didapatkan
+          accountAddress = accounts[0];
+        //   document.querySelector('#donate-form').style.display = 'flex';
+        });
+        
+        // kita bisa mendapatkan interface di bawah ini dari ABI yang telah kita compile
+        $(':radio').change(function() {
+          //console.log('New star rating: ' + this.value);
+        fruitContract.methods.setRating(this.value, result[2]).send( {from: accountAddress});          
+        document.querySelector('#nilai').innerHTML = this.value;
+        });
+        
+
+        
+
+        const fruitContract = new web3.eth.Contract(abiInterface, contractAddress);
+        const kode = document.querySelector('kode-track');
+        const val_rating = document.querySelector('.stars')
+        console.log(fruitContract);
+        
+        var vFarm;
+        // document.querySelector('#getfar').addEventListener('click', () => {
+        fruitContract.methods.getFruit(processForm()).call().then(result => {
+          
+          document.querySelector('#namab').innerHTML = result[0];
+          document.querySelector('#desc').innerHTML = result[1];
+          document.querySelector('#hdate').innerHTML = dd(result[3]);
+          document.querySelector('#sendF').innerHTML = dd(result[5][0]);
+          // document.querySelector('#nnn').innerHTML = dd(result[5][0])+dd(result[5][1]);
+          // // document.querySelector('#iii').innerHTML = result[6];
+          vFarm = result[2];
+
+          fruitContract.methods.getRating(result[2]).call().then( valuess => {
+            document.querySelector('#rating1').innerHTML = valuess[0];
+          });
+
+          fruitContract.methods.getFarm(result[2]).call().then(show => {
+            document.querySelector('#nfarm').innerHTML = show[0];
+            document.querySelector('#cfarm').innerHTML = show[1];
+            document.querySelector('#cofarm').innerHTML = show[2];
+          });
+
+          fruitContract.methods.getDistri(result[4][0]).call().then(distribute => {
+            document.querySelector('#n_distri').innerHTML = distribute[0];
+            document.querySelector('#cdistri').innerHTML = distribute[1];
+            document.querySelector('#codistri').innerHTML = distribute[2];
+          });
+
+          document.querySelector('#sendD').innerHTML = dd(result[5][1]);
+          document.querySelector('#receiveD').innerHTML = dd(result[6][0]);
+
+          fruitContract.methods.getMark(result[4][1]).call().then(retail => {
+            document.querySelector('#nretail').innerHTML = retail[0];
+            document.querySelector('#cretail').innerHTML = retail[1];
+            document.querySelector('#coretail').innerHTML = retail[2];
+          });
+          document.querySelector('#receiveM').innerHTML = dd(result[6][1]);
+        });
+
+
+        // $("#btnsubmit").click(function(){
+        //   fruitContract.methods.setRating(5,vFarm).send( {from: accountAddress});
+        // });
+        const fruitBtn = document.querySelector('#btnsubmit');
+        fruitBtn.addEventListener('click', () => {
+          const fruitContract = new web3.eth.Contract(abiInterface, contractAddress);
+          fruitContract.methods.setRating(num_val, vFarm).send( {from: accountAddress});
+          
+        });
+
+      });
+      
+
+
+    function dd(timest){
+
+      date = new Date(timest * 1000),
+      datevalues =[date.getDate(), date.getMonth()+1, date.getFullYear()];
+      return datevalues;
+    }
+    function processForm(){
+      var parameters = location.search.substring(1).split("&");
+      var temp = parameters[0].split("=");
+      document.getElementById("kode-track").innerHTML = temp[1];
+      return temp[1];
+    }
+
+    processForm();
+    </script>
+</body>
+

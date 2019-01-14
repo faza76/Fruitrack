@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fruittracker</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="css/style.css" rel="stylesheet" id="bootstrap-css">
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/qrcode.js"></script>
+  <link rel="stylesheet" href="cs/hfarmer.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!------ Include the above in your HEAD tag ---------->
+<header id="header" class="header header-hide">
+    <div class="col-md-12" style="background-color: #ffff">
+      <div id="logo" class="pull-left">
+        
+        <h1><a href="index.html"><img src="icon/logo3.png" width="120px" height="60px" alt="" title="" /></a>
+  </h1>
+    </div>
+</div>
+  
+  </header>
+
+<body>
+<div class="container">
+        <div class="row" align="center">
+             
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+               
+                    <div class="box-icon text-center">
+
+                        <div class="title">
+                            <p id="button-daf" class="contact100-form-btn" style="background-color: #ffff" data-toggle="modal" data-target="#myModal"></p><img src="icon/farmer.png" class="img-responsive" width="35%" align="center">
+                            <h1 style="color: #878787" >Farmer</h1>
+                            </button>
+                        </div>
+                        
+                        
+                        
+                     </div>
+                </div> 
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+               
+                    <div class="box-icon text-center">
+
+                        <div class="title">
+                            <p id="button-daf" class="contact100-form-btn" style="background-color: #ffff" ></p>
+                            <!-- <img src="icon/star.png" class="img-responsive" width="35%" align="center"> -->
+                            <h1 id="form_rating" style="color:#878787">0</h1>
+                            <br>
+                            <h1 style="color: #878787" >Rating</h1>
+                            </button>
+                        </div>
+                        
+                        
+                        
+                     </div>
+                </div>    
+                
+                <a href="#" data-toggle="modal" data-target="#addFruit">
+                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-icon text-center">                        
+                        <div class="title">
+                            <p id="button-daf" class="contact100-form-btn" style="background-color: #ffff" ></p>
+                            <img src="icon/add.png" class="img-responsive" margin="auto" width="35%">
+                            <h1 style="color: #878787" >Add Fruit</h1>
+                        </button>
+                        </div>    
+                     </div>
+                </div>
+            </a>   
+                 
+                 <a href="#" data-toggle="modal" data-target="#sendFruit">
+                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-icon text-center">                        
+                        <div class="title">
+                            <p id="button-daf" class="contact100-form-btn" style="background-color: #ffff" ></p>
+                            <img src="icon/box.png" class="img-responsive" margin="auto" width="35%">
+                            <h1 style="color: #878787" >Send</h1>
+                        </button>
+                        </div>    
+                     </div>
+                </div>
+            </a>
+                
+        </div>      
+    </div>
+<br>
+<div class="container">
+    <div class="panel with-nav-tabs panel-primary">
+        <div class="panel-heading">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1primary" data-toggle="tab">DATA</a></li>
+                    
+                  </ul>
+        </div>
+        <div class="panel-body">
+            <div class="tab-content">
+           <div id="tab1primary" class="tab-pane fade in active" >
+              <table border="1" class="stab">
+                <tr font-size="20px">
+                  <td>
+                   NO
+                  </td>
+                  <td >
+                    TRACK ID
+                  </td>
+                  <td >
+                    FRUIT CODE
+                  </td>
+                  <td ">
+                    QUANTITY
+                  </td>
+                  <td >
+                    RECEIVER
+                  </td>
+                  <td >
+                    STATUS
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    1.
+                  </td>
+                  <td id="t1">
+                    aaaa
+                  </td>
+                  <td id="f1">
+                    
+                  </td>
+                  <td id="q1">
+                    
+                  </td>
+                  <td id="r1">
+                    
+                  </td>
+                  <td id="s1">
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    2.
+                  </td>
+                  <td id="t2">
+                    
+                  </td>
+                  <td id="f2">
+                    
+                  </td>
+                  <td id="q2">
+                    
+                  </td>
+                  <td id="r2">
+                    
+                  </td>
+                  <td id="s2">
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    3.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    4.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    5.
+                  </td>
+                  <td >
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+              </table>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+
+                      
+ <!-- Modal -->
+<div id="addFruit" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add Fruit</h4>
+        </div>
+     <div class="modal-body">
+        <div class="tab-content">
+             <div class="tab-pane fade active in" id="dbuah">
+                <form id="dbuah">
+                <div class="form-group" data-validate="Code is required"><input onmauseout="makeCode()" onload="makeCode()" onchange="makeCode()" type="text" id="cFruit" class="form-control" placeholder="Masukan Kode Buah"></div>
+                <div class="form-group" data-validate="Name is required"><input type="text" class="form-control" id="nFruit" placeholder="Nama Buah"></div>
+                <div class="form-group" data-validate="date"><input type="date" class="form-control" id="datetS" placeholder="date" ></div>
+                <div class="form-group" data-validate = "Message is required"><textarea class="form-control" id="desc" placeholder="Deskripsi"></textarea></div>
+        <div class="row mrgn-30-top">
+            <div class="col-md-6">
+              <p id="button-send" class="btn btn-larger btn-block" style="background-color: #4a9c3b">Daftar</p>
+            </div>
+            <div class="col-md-6">
+              <p id="button-generate" class="btn btn-larger btn-block" style="background-color: #4a9c3b" onclick="hideShow()" >Generate</p>
+            </div>
+            
+        </div>
+        
+         </form>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+
+  <div id="qrcode_open" style="display: none" >
+              <div id="qrcode" ></div> 
+              <p id="bawahtanah">QR QODE FRUIT</p>
+              
+
+        </div>
+  
+</div>
+</div>
+</div>
+</div>
+
+<div id="sendFruit" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Form Kirim</h4>
+      </div>
+      <div class="modal-body">
+        <div class="tab-pane fade in" id="bkirim">
+            <form id="bkirim">
+              <div class="form-group" data_validate="Track ID"><input onmauseout="makeCode2()" onload="makeCode2()" onchange="makeCode2()" type="text" class="form-control" id="track" placeholder="Track ID"></div>
+              <div class="form-group" data-validate="Kode Buah"><input type="text" class="form-control" id="kFruit" placeholder="Kode Buah">             
+              </div>
+              <div class="form-group" data-validate="Name is required"><input type="text" class="form-control" id="receive" placeholder="Penerima"></div>
+
+              <div class="form-group" data-validate="kuantiti"><input type="number" name="points" class="form-control" id="qty" placeholder="Quantity"></div>
+              
+              <div class="row mrgn-30-top">
+                <div class="col-md-6">
+                <p id="send" class="btn btn-larger btn-block" style="background-color: #4a9c3b">Send</p>
+                </div>
+                <div class="col-md-6">
+                <p id="generate_track" class="btn btn-larger btn-block" onclick="hideShow2()" style="background-color: #4a9c3b">GENERATE</p>
+                </div> 
+              </div>
+              
+            </form>
+          </div>
+      </div>
+      <div class="modal-footer" align = "center">
+
+        <div id="qrcode_open2" align ="center" style="display: none" >
+
+                    <div id="qrcode2"></div> 
+                    <p id="bawahtanah">QR TRACK ID</p>
+                    
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+      function hideShow() {
+      var x = document.getElementById("qrcode_open");
+      var elText = document.getElementById("cFruit");
+
+      if (!elText.value) {
+          alert("Input a text");
+          elText.focus();
+          return;
+        }else{
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+          makeCode()
+        }
+      }
+      function hideShow2() {
+      var x = document.getElementById("qrcode_open2");
+      var elText = document.getElementById("track");
+
+      if (!elText.value) {
+          alert("Input a text");
+          elText.focus();
+          return;
+        }else{
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+          makeCode2()
+        }
+      }
+
+      var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width : 150,
+        height : 150
+      });
+
+      var qrcode2 = new QRCode(document.getElementById("qrcode2"), {
+        width : 150,
+        height : 150
+      });
+
+      function makeCode () {		
+        var elText = document.getElementById("cFruit");
+        
+        if (!elText.value) {
+          alert("Input a text");
+          elText.focus();
+          return;
+        }else{
+          // hideShow();
+        }
+        
+        qrcode.makeCode(elText.value);
+      }
+      function makeCode2 () {    
+        var elText = document.getElementById("track");
+        
+        if (!elText.value) {
+          alert("Input a text");
+          elText.focus();
+          return;
+        }else{
+          // hideShow();
+        }
+        
+        qrcode2.makeCode(elText.value);
+      }
+
+      // makeCode();
+
+      $("#text").
+        on("blur", function () {
+          makeCode();
+        }).
+        on("keydown", function (e) {
+          if (e.keyCode == 13) {
+            makeCode();
+          }
+        });
+
+</script>
+
+
+<script src="js/web3.min.js"></script>
+<script src="js/abi.js"></script>
+    <script>
+      // membuat variable global untuk menampung account address
+     let accountAddress = null;
+
+      window.addEventListener('load', () => {
+        web3 = new Web3(window.web3.currentProvider);
+
+        web3.eth.getAccounts().then(accounts => {
+
+          accountAddress = accounts[0];
+        });
+        
+        const fruitContract = new web3.eth.Contract(abiInterface, contractAddress);
+        const nama = document.querySelector('#nFruit');
+        const kode = document.querySelector('#cFruit');
+        const descrip = document.querySelector('#desc');
+        const time = document.querySelector('#datetS');
+
+        web3.eth.getAccounts().then(accounts => {
+          fruitContract.methods.getRating(accounts[0]).call().then(res => {
+            document.querySelector('#form_rating').innerHTML = res[0];          
+          });
+        });
+
+        web3.eth.getAccounts().then(accounts => {
+
+          fruitContract.methods.getTFarm(accounts[0]).call().then(res => {
+            document.querySelector('#t1').innerHTML = res[0];          
+            fruitContract.methods.getShip(res[0]).call().then(ship => {
+                document.querySelector('#f1').innerHTML = ship[0];
+                document.querySelector('#q1').innerHTML = ship[4][0] + " kg";
+                document.querySelector('#r1').innerHTML = ship[2];
+                if(ship[5] == 1){
+                  document.querySelector('#s1').innerHTML = "On Progress";
+                }
+                else if(ship[5] == 2){
+                 document.querySelector('#s1').innerHTML = "On Distributor"; 
+                }
+                else {
+                 document.querySelector('#s1').innerHTML = "Received"; 
+                } 
+            });
+            document.querySelector('#t2').innerHTML = res[1];          
+            fruitContract.methods.getShip(res[1]).call().then(ship => {
+                document.querySelector('#f2').innerHTML = ship[0];
+                document.querySelector('#q2').innerHTML = ship[4][0] + " kg";
+                document.querySelector('#r2').innerHTML = ship[2];
+                if(ship[6] == 1){
+                  document.querySelector('#s2').innerHTML = "On Progress";
+                }
+                else if(ship[6] == 2){
+                 document.querySelector('#s2').innerHTML = "On Distributor"; 
+                }
+                else {
+                 document.querySelector('#s2').innerHTML = "Received"; 
+                }
+            });
+            document.querySelector('#t3').innerHTML = res[2];          
+            fruitContract.methods.getShip(res[2]).call().then(ship => {
+                document.querySelector('#f3').innerHTML = ship[0];
+                document.querySelector('#q3').innerHTML = ship[4][0] + " kg";
+                document.querySelector('#r3').innerHTML = ship[2];
+                if(ship[6] == 1){
+                  document.querySelector('#s3').innerHTML = "On Progress";
+                }
+                else if(ship[6] == 2){
+                 document.querySelector('#s3').innerHTML = "On Distributor"; 
+                }
+                else {
+                 document.querySelector('#s3').innerHTML = "Received"; 
+                }
+            });
+
+          });
+        });
+
+        const fruitBtn = document.querySelector('#button-send');
+        // menambahkan listener click pada button donate
+        fruitBtn.addEventListener('click', () => {
+        // const dateEntered = new Date(time);
+        // const toTimeStamp = dateEntered.getTime();
+
+            fruitContract.methods.newfruit(kode.value, nama.value, descrip.value).send( {from: accountAddress});
+          
+        });
+        const trac = document.querySelector('#track');
+        const kode_ = document.querySelector('#kFruit');
+        const next = document.querySelector('#receive');
+        const qt = document.querySelector('#qty');
+
+        document.querySelector('#send').addEventListener('click', () => {
+            fruitContract.methods.sendFruitFarmer(trac.value, kode_.value, next.value, qt.value).send( {from: accountAddress});
+        });
+
+
+      });
+
+      
+    </script>
+</body>
+
+</html>
